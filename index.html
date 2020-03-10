@@ -19,6 +19,9 @@
    <title>The Hitori Puzzle</title>
    <link href="jpf_reset.css" rel="stylesheet" />
    <link href="jpf_styles.css" rel="stylesheet" />
+   <link href="jpf_hitori.css" rel="stylesheet" />
+   <script src="jpf_grids3.js" async></script>
+   <script src="jpf_hitori.js" async></script>
  
 </head>
 
@@ -49,8 +52,8 @@
       <figure id="puzzle"></figure>
    
       <div id="bottomButtons">
-         <input type="button" id="check" value="Check Solution" />
-         <input type="button" id="solve" value="Show Solution" />
+         <input type="button" id="check" value="Check Solution" onclick="findErrors()"/>
+         <input type="button" id="solve" value="Show Solution" onclick="showSolution()" />
       </div>  
    </section>
    
